@@ -12,7 +12,6 @@
         <li>jQuery UI</li>
         <li>Bootstrap</li>
         <li>Font Awesome</li>
-        <li><!-- Modernizr --></li>
         <li>CDN files</li>
     </li>
     <li>Gulp modules & tasks</li>
