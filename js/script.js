@@ -1,25 +1,23 @@
 $(function () {
-    $('ul#list-group-content').sortable({
-        connectWith: ['ul#list-group-tagging', 'ul#list-group-review', 'ul#list-group-publish'],
-        opacity: 0.7,
-        placeholder: 'dragging-border'
-    });
+    function showBadgeStatus() {
+        var contentLength = $('#content li').length,
+            reviewLength = $('#review li').length;
 
-    $('ul#list-group-tagging').sortable({
-        connectWith: ['ul#list-group-content', 'ul#list-group-review', 'ul#list-group-publish'],
-        opacity: 0.7,
-        placeholder: 'dragging-border'
-    });
+        $('span.badge-content')
+            .html(contentLength);
+        $('span.badge-review')
+            .html(reviewLength);
+    };
 
-    $('ul#list-group-review').sortable({
-        connectWith: ['ul#list-group-content', 'ul#list-group-tagging', 'ul#list-group-publish'],
-        opacity: 0.7,
-        placeholder: 'dragging-border'
-    });
+    showBadgeStatus();
 
-    $('ul#list-group-publish').sortable({
-        connectWith: ['ul#list-group-content', 'ul#list-group-tagging', 'ul#list-group-review'],
+    $('ul.list-group').sortable({
+        connectWith: 'ul.list-group',
         opacity: 0.7,
-        placeholder: 'dragging-border'
+        placeholder: 'dragging-border',
+        dropOnEmpty: true,
+        stop: function(){
+            showBadgeStatus();
+        }
     });
 });

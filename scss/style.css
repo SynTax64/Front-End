@@ -72,7 +72,6 @@ div.modal-content .modal-body {
     text-align: center; }
 
 .dragging-border {
-  border: 1px dashed rgba(0, 0, 0, 0.3);
-  border-radius: 100%; }
+  border: 1px dashed rgba(0, 0, 0, 0.3); }
 
 /*# sourceMappingURL=style.css.map */
