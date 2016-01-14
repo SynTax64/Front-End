@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Front End Challenge</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-inverse" id="main-nav">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand">Front End Challenge</a>
+        </div>
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Content</a></li>
+                <li><a href="#">Outputs</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">You <span class="caret"></span></a></li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                        aria-haspopup="true" aria-expanded="false"><img id="profile-img"
+                                                                                        src="images/profile-img.png"
+                                                                                        alt=""/><span id="profile-name">Hello, <strong>David</strong></span><span
+                        class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><i class="fa fa-user"></i><span>Account</span><span class="clear"></span></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-cog"></i><span>Settings</span><span class="clear"></span></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-sign-out"></i><span>Logout</span><span class="clear"></span></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div id="sub-menu">
+    <nav class="navbar navbar-default" id="sub-nav">
+        <ul class="nav navbar-nav">
+            <li><a href="#">Products</a></li>
+            <li class="active"><a href="#">Manage</a></li>
+            <li><a href="#">Custom</a></li>
+        </ul>
+    </nav>
+</div>
+
+<main id="main-content">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#">Team SW</a></li>
+        <li><a href="#">Team Unicorn</a></li>
+        <li><a href="#">Team Laprechaun</a></li>
+        <li><a data-toggle="modal" href="#create-Team">+</a></li>
+    </ul>
+    <div class="jumbotron container-fluid" id="main-wrapper">
+        <div id="content-tabs">
+            <div class="row" id="content-header">
+                <section class="col-md-3"><h3>Content <span class="badge">14</span></h3>
+
+                    <p class="header-wrap"><span class="text-column-content">Lorem</span></p>
+                </section>
+                <section class="col-md-3"><h3>Tagging</h3>
+
+                    <p class="header-wrap"><span class="text-column-content">Lorem</span></p>
+                </section>
+                <section class="col-md-3"><h3>Review <span class="badge">3</span></h3>
+
+                    <p class="header-wrap"><span class="text-column-content">Lorem</span></p>
+                </section>
+                <section class="col-md-3"><h3>Publish</h3>
+
+                    <p class="header-wrap"><span class="text-column-publish">Online</span></p>
+                </section>
+            </div>
+            <div class="row">
+                <section class="col-md-3" id="content">
+                    <ul class="list-group" id="list-group-content">
+                        <li><a class="list-group-item ui-state-default" href="#">
+                            <div class="square-label"></div>
+                            <div>The Amazing Spiderman
+                                <div class="square content"></div>
+                            </div>
+                        </a></li>
+                        <li><a class="list-group-item ui-state-default" href="#">
+                            <div class="square-label"></div>
+                            <div>Thor
+                                <div class="square publish"></div>
+                            </div>
+                        </a></li>
+                        <li><a class="list-group-item ui-state-default" href="#">
+                            <div class="square-label"></div>
+                            <div>Final Destination
+                                <div class="square tagging"></div>
+                            </div>
+                        </a></li>
+                        <li><a class="list-group-item ui-state-default" href="#">
+                            <div class="square-label"></div>
+                            <div>Wrong Turn
+                                <div class="square publish"></div>
+                            </div>
+                        </a></li>
+                        <li><a class="list-group-item ui-state-default" href="#">
+                            <div class="square-label"></div>
+                            <div>Fantastic Four
+                                <div class="square tagging"></div>
+                            </div>
+                        </a></li>
+                    </ul>
+                </section>
+
+                <section class="col-md-3" id="tagging">
+                    <ul class="list-group" id="list-group-tagging">
+                        <li><a class="list-group-item" href="#">
+                            <div class="square-label"></div>
+                            <div>WALL-E
+                                <div class="square publish"></div>
+                            </div>
+                        </a></li>
+                        <li><a class="list-group-item" href="#">
+                            <div class="square-label"></div>
+                            <div>Draggable Card
+                                <div class="square tagging"></div>
+                            </div>
+                        </a></li>
+                    </ul>
+                </section>
+
+                <section class="col-md-3" id="review">
+                    <ul class="list-group" id="list-group-review">
+                        <li><a class="list-group-item" href="#">
+                            <div class="square-label"></div>
+                            <div>Inception
+                                <div class="square publish"></div>
+                            </div>
+                        </a></li>
+                    </ul>
+                </section>
+
+                <section class="col-md-3" id="publish">
+                    <ul class="list-group" id="list-group-publish">
+                        <li><a class="list-group-item" href="#">
+                            <div class="square-label"></div>
+                            <div>Inside Out
+                                <div class="square publish"></div>
+                            </div>
+                        </a></li>
+                        <li><a class="list-group-item" href="#">
+                            <div class="square-label"></div>
+                            <div>Focus
+                                <div class="square publish"></div>
+                            </div>
+                        </a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- Open dialog -->
+<div class="modal fade" id="create-Team" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <form class="navbar-form">
+                    <h2>Add new team</h2>
+                    <br/>
+                    <input type="text" id="create-new-team" class="input-lg"/>
+                    <hr>
+                    <button type="button" class="btn btn-lg btn-info ">Add Team</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="dist/jquery-2.1.4.min.js"></script>
+<script src="dist/bootstrap.min.js"></script>
+<script src="dist/jquery-ui.min.js"></script>
+<script>
+
+</script>
+<!-- <script src="js/modernizr.js"></script> -->
+<script src="js/script.js"></script>
+</body>
+</html>
