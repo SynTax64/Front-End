@@ -115,6 +115,11 @@ div.modal-content {
 
     .navbar-form {
       text-align: center;
+
+      p {
+        margin-top: 10px;
+        display: none;
+      }
     }
   }
 }

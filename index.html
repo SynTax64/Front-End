@@ -34,12 +34,9 @@
                                                                                         alt=""/><span id="profile-name">Hello, <strong>David</strong></span><span
                         class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#"><i class="fa fa-user"></i><span>Account</span><span class="clear"></span></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-cog"></i><span>Settings</span><span class="clear"></span></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-sign-out"></i><span>Logout</span><span class="clear"></span></a>
-                        </li>
+                        <li><a href="#"><i class="fa fa-user"></i><span>Account</span><span class="clear"></span></a></li>
+                        <li><a href="#"><i class="fa fa-cog"></i><span>Settings</span><span class="clear"></span></a></li>
+                        <li><a href="#"><i class="fa fa-sign-out"></i><span>Logout</span><span class="clear"></span></a></li>
                     </ul>
                 </li>
             </ul>
@@ -67,22 +64,23 @@
     <div class="jumbotron container-fluid" id="main-wrapper">
         <div id="content-tabs">
             <div class="row" id="content-header">
-                <section class="col-md-3"><h3>Content <span class="badge badge-content">3</span></h3>
-
+                <section class="col-md-3"><h3>Content <span class="badge badge-content"></span></h3>
                     <p class="header-wrap"><span class="text-column-content">Lorem</span></p>
                 </section>
+
                 <section class="col-md-3"><h3>Tagging</h3>
-
                     <p class="header-wrap"><span class="text-column-content">Lorem</span></p>
+
                 </section>
+
                 <section class="col-md-3"><h3>Review <span class="badge badge-review"></span></h3>
-
                     <p class="header-wrap"><span class="text-column-content">Lorem</span></p>
                 </section>
-                <section class="col-md-3"><h3>Publish</h3>
 
+                <section class="col-md-3"><h3>Publish</h3>
                     <p class="header-wrap"><span class="text-column-publish">Online</span></p>
                 </section>
+
             </div>
             <div class="row">
                 <section class="col-md-3" id="content">
@@ -175,10 +173,11 @@
             <div class="modal-body">
                 <form class="navbar-form">
                     <h2>Add new team</h2>
-                    <br/>
+                    <br/><br/>
                     <input type="text" id="create-new-team" class="input-lg"/>
+                    <p><span class="glyphicon glyphicon-info-sign" style="color: #e10000"></span><span style="font-size: small"> The name is awesome but name it is already taken.</span></p>
                     <hr>
-                    <button type="button" class="btn btn-lg btn-info ">Add Team</button>
+                    <button type="button" class="btn btn-lg btn-info " id="btn-create-new-team">Add Team</button>
                 </form>
             </div>
         </div>

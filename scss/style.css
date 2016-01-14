@@ -70,6 +70,9 @@ div.modal-content .modal-body {
   margin: 0 auto; }
   div.modal-content .modal-body .navbar-form {
     text-align: center; }
+    div.modal-content .modal-body .navbar-form p {
+      margin-top: 10px;
+      display: none; }
 
 .dragging-border {
   border: 1px dashed rgba(0, 0, 0, 0.3); }

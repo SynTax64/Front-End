@@ -16,8 +16,14 @@ $(function () {
         opacity: 0.7,
         placeholder: 'dragging-border',
         dropOnEmpty: true,
-        stop: function(){
+        stop: function () {
             showBadgeStatus();
         }
     });
+
+    $('button#btn-create-new-team').click(function () {
+        $('.navbar-form p').css('display', 'block');
+    });
+
+
 });
