@@ -1,4 +1,4 @@
-# Front End Challenge
+# Front End (Kanban project)
 
 <h3>Include</h3>
 <ul>
